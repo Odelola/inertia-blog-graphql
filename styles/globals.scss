@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* ROOT VARIABLES STARTS */
+:root{
+  --bg-color: #13111a;
+  --text-white: #ffffff;
+  --card-color: #1d1a27;
+  --card-box-shadow: rgba(0, 0, 0, 0.1);
+  --general-text-color: #b7b4c7;
+  --max-width: 1240px;
+  --blog-max-width: 768px;
+  --primary-blue: #6f86ff;
+  --blob-blue: #2d42ff;
+  --blob-pink: #ff4895;
+  --blob-purple: #6923ff;
+  --primary-purple: #b372ce;
+  --primary-pink:  #ff7586;
+  --footer-border-color: #302c3f;
+}
+/* ROOT VARIABLES ENDS */
+/* GENERAL RESET STARTS */
+body{
+  background: var(--bg-color);
+  color: var(--general-text-color);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+/* GENERAL RESET ENDS */
+
