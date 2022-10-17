@@ -10,7 +10,7 @@ const Footer = () => {
           <InertiaIcon />
         </div>
         <div className={styles.footerCredits}>
-          <h2>Copyright &copy; <a href="http://www.odelolaoluwaseyi.com" target="_blank">ODELOLA OLUWASEYI</a> | Color Pallete inspired by Webflow.io</h2>
+          <h2>Copyright &copy; <a href="http://www.odelolaoluwaseyi.com" target="_blank" rel="noreferrer">ODELOLA OLUWASEYI</a> | Color Pallete inspired by Webflow.io</h2>
         </div>
       </div>
     </footer>
