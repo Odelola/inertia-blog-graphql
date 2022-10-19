@@ -36,3 +36,14 @@ a {
 }
 /* GENERAL RESET ENDS */
 
+/* NPROGRESS BAR  STARTS */
+#nprogress .bar{
+  background: linear-gradient(90deg, var(--primary-blue), var(--primary-purple) 50%, var(--primary-pink)) !important;
+  box-shadow:  none !important;
+  filter: none !important;
+  -webkit-filter: non;
+}
+#nprogress .peg{
+  box-shadow:  0px 0px 10px var(--primary-blue) !important;
+}
+/* NPROGRESS BAR  ENDS */

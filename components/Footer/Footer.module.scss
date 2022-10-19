@@ -29,4 +29,38 @@
             }
         }
     }
+
+    @media (min-width: 250px) and (max-width: 760px){
+        .footerInner{
+            flex-direction: column;
+            padding: 35px 10px;
+            align-items: center;
+
+            .footerCredits{
+                h2 {
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 900px){
+        .footerInner{
+            padding: 20px 10px;
+            justify-content: center;
+            flex-direction: column;
+
+            .footerLogo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    @media (min-width: 901px){
+        .footerInner{
+            padding: 25px 10px
+        }
+    }
 }

@@ -121,25 +121,22 @@
                 width: 100%;
                 height: 2px;
                 background: var(--footer-border-color);
-                transition: wi .3s ease-in;
-                -webkit-transition: transform .3s ease-in;
-                -moz-transition: transform .3s ease-in;
-                -ms-transition: transform .3s ease-in;
-                -o-transition: transform .3s ease-in;
-
+                transition: width .3s ease-in;
+                -webkit-transition: width .3s ease-in;
+                -moz-transition: width .3s ease-in;
+                -ms-transition: width .3s ease-in;
+                -o-transition: width .3s ease-in;
                 span{
                     transition: width .45s ease-in;
                     -webkit-transition: width .45s ease-in;
                     -moz-transition: width .45s ease-in;
                     -ms-transition: width .45s ease-in;
                     -o-transition: width .45s ease-in;
-
                     width: 0%;
                     height: 100%;
-
                     display: block;
                     background: linear-gradient(90deg, var(--primary-blue), var(--primary-purple) 50%, var(--primary-pink));
-                }
+}
             }
         }
     }
@@ -148,4 +145,52 @@
     -moz-transition: width .45s ease-in;
     -ms-transition: width .45s ease-in;
     -o-transition: width .45s ease-in;
+
+    @media (min-width: 250px) and (max-width: 500px){
+        &{
+            flex-basis: 100%;
+
+            .postCardImage{
+                height: 200px;
+
+                
+                // img{
+                //     border-top-left-radius: 20px;
+                //     border-top-right-radius: 20px;
+                //     height: 100%;
+                //     object-fit: cover;
+                //     width: 100%;
+                // }
+            }
+
+            
+            .postCardInner{
+                padding: 30px 20px;
+                .postCardTitle{
+                    font-size: 20px;
+                }
+                .postCardLinkContainer{
+                    .postCardLink{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }    
+    @media (min-width: 501px) and (max-width: 900px){
+
+        &{
+            flex-basis: 47%;
+
+            .postCardImage{
+                height: 250px;
+            }
+            .postCardInner{
+                padding: 30px 20px;
+                .postCardTitle{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

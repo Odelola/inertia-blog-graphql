@@ -5,7 +5,7 @@ import styles from "./Navbar.module.scss"
 
 const Navbar = () => {
     const router = useRouter();
-    const {pathname, route } = router;
+    const { pathname, route } = router;
     const onHomePage = pathname === "/" || route === "/";
 
     return (
@@ -20,10 +20,13 @@ const Navbar = () => {
 
                 </div>
                 <div className={styles.navButtonContainer}>
-                    <a href="#0" className={styles.navButton}>All</a>
+                    {onHomePage ? (
+                        <Link href={`/articles`}>
+                            <a className={styles.navButton}>All</a>
+                        </Link>) : null}
                 </div>
             </div>
-        </nav>
+        </nav >
     )
 }
 

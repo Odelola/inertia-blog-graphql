@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { GraphQLClient } from 'graphql-request'
+import { convertDate } from "../../utils/dateConvert"
 import { BASE_URL, EACHPOSTQUERY, SLUGSQUERY } from '../../utils/queries';
 import styles from "../../styles/Post.module.scss"
 import { DateIcon, TimeIcon } from '../../images/icons';
@@ -20,7 +21,7 @@ export default function Article({ post }) {
                         <div className={styles.articleInfo}>
                             <div>
                                 <DateIcon />
-                                {datePublished}
+                                {convertDate(datePublished)}
                             </div>
                             <div>
                                 <TimeIcon />
@@ -47,9 +48,9 @@ export default function Article({ post }) {
                         </div>
                     </div>
                     <div className={styles.articleContent}>
-                    <div className={styles.articleContentIinner} dangerouslySetInnerHTML={{__html: content.html}}>
+                        <div className={styles.articleContentIinner} dangerouslySetInnerHTML={{ __html: content.html }}>
 
-                    </div>
+                        </div>
                     </div>
                 </div>
             </main>

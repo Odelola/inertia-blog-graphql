@@ -43,4 +43,29 @@
             }
         }
     }
+    @media (min-width: 250px) and (max-width: 900px){
+        .navInner{
+            padding: 15px 10px;
+
+            .navLogo{
+
+                h2{
+                    font-size: 22px;
+                }
+            }
+
+            .navButtonContainer{
+
+                .navButton{
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 901px){
+        .navInner{
+            padding: 20px 10px
+        }
+    }
 }

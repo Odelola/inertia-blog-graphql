@@ -76,7 +76,11 @@
         img{
             width: 100%;
             border-radius: 25px;
-        }
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+}
     }
 }
 .articleContentIinner{
@@ -108,5 +112,30 @@
         li{
             line-height: 35px;
         }
+    }    
+}
+
+@media (min-width: 250px) and (max-width: 900px){
+    .articleHeader{
+        padding: 0 10px;
+        .articleText{
+    
+            .articleHeading{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .articleBanner{
+        max-width: var(--max-width);
+        margin: 80px auto;
+        
+        .articleBanner_image{
+            padding: 0 10px;
+        }
+    }
+
+    .articleContentIinner{
+        padding: 0 15px;
     }
 }
